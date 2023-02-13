@@ -88,9 +88,14 @@ const
 #endif // XRESOURCES_PATCH
 char *colors[][2] = {
 	/*               fg         bg       */
+	/*
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
 	[SchemeSel]  = { "#eeeeee", "#005577" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
+	*/
+	[SchemeNorm] = { "#fbf1c7", "#504945" },
+	[SchemeSel] = { "#ffffff", "#d65d0e" },
+	[SchemeOut] = { "#ffffff", "#8ec07c" },
 	#if BORDER_PATCH
 	[SchemeBorder] = { "#000000", "#005577" },
 	#endif // BORDER_PATCH
@@ -98,7 +103,7 @@ char *colors[][2] = {
 	[SchemeMid]  = { "#eeeeee", "#770000" },
 	#endif // MORECOLOR_PATCH
 	#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-	[SchemeSelHighlight]  = { "#ffc978", "#005577" },
+	[SchemeSelHighlight]  = { "#ffffff", "#d65d0e" },
 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
 	#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
 	#if HIGHPRIORITY_PATCH
