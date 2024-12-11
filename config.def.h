@@ -11,11 +11,11 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeSelHighlight] = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemeNorm] = { "#c8c8c8", "#1e1e2e" },          // Normal text, background
+	[SchemeSel] = { "#ffffff", "#282c34" },           // Selected text, background
+	[SchemeSelHighlight] = { "#ff6c6b", "#282c34" },  // Highlighted text in selection
+	[SchemeNormHighlight] = { "#ff6c6b", "#1e1e2e" }, // Highlighted text in normal
+	[SchemeOut] = { "#000000", "#51afef" },           // Output (urgent text), background
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
